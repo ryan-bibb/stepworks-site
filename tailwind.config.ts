@@ -49,6 +49,10 @@ const config: Config = {
           charcoal: "hsl(var(--brand-charcoal))",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        heading: ["var(--font-heading)"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
