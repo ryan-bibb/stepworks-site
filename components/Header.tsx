@@ -26,48 +26,48 @@ const navSections: NavSection[] = [
   {
     label: "Services",
     links: [
-      { label: "Detox and Residential", href: "/" },
-      { label: "Intensive Outpatient", href: "/" },
-      { label: "Sober Living", href: "/" },
-      { label: "Medication Assisted-Therapy (MAT)", href: "/" },
-      { label: "PICC Line Program", href: "/" },
+      { label: "Detox and Residential", href: "/services/detox" },
+      { label: "Intensive Outpatient", href: "/services/iop" },
+      { label: "Sober Living", href: "/services/sober-living" },
+      { label: "Medication Assisted-Therapy (MAT)", href: "/services/mat" },
+      { label: "PICC Line Program", href: "/services/picc-line" },
     ],
   },
   {
     label: "Locations",
     links: [
-      { label: "Bowling Green", href: "/" },
-      { label: "E-town Crowne Pointe", href: "/" },
-      { label: "E-town Woodland Dr.", href: "/" },
-      { label: "London", href: "/" },
-      { label: "Nicholasville", href: "/" },
-      { label: "Paducah", href: "/" },
+      { label: "Bowling Green", href: "/locations/bowling-green" },
+      { label: "E-town Crowne Pointe", href: "/locations/etown-crowne-pointe" },
+      { label: "E-town Woodland Dr.", href: "/locations/etown-woodland-dr" },
+      { label: "London", href: "/locations/london" },
+      { label: "Nicholasville", href: "/locations/nicholasville" },
+      { label: "Paducah", href: "/locations/paducah" },
     ],
   },
   {
     label: "About",
     links: [
-      { label: "The Stepworks Story", href: "/" },
-      { label: "CARF Accreditation", href: "/" },
-      { label: "Accepted Insurances", href: "/" },
-      { label: "Frequently Asked Questions", href: "/" },
-      { label: "Meet Our Team", href: "/" },
-      { label: "Careers", href: "/" },
+      { label: "The Stepworks Story", href: "/about" },
+      { label: "CARF Accreditation", href: "/about/carf" },
+      { label: "Accepted Insurances", href: "/about/insurance" },
+      { label: "Frequently Asked Questions", href: "/about/faq" },
+      { label: "Meet Our Team", href: "/about/team" },
+      { label: "Careers", href: "/about/careers" },
     ],
   },
   {
     label: "Contact Us",
     links: [
-      { label: "Contact Us", href: "/" },
-      { label: "Medical Records Request", href: "/" },
-      { label: "Referral Info", href: "/" },
+      { label: "Contact Us", href: "/contact" },
+      { label: "Medical Records Request", href: "/contact/records" },
+      { label: "Referral Info", href: "/contact/referrals" },
     ],
   },
   {
     label: "Blog",
     links: [
-      { label: "Blog/Media", href: "/" },
-      { label: "Doctor's Notes by Tom Ingram", href: "/" },
+      { label: "Blog/Media", href: "/blog" },
+      { label: "Doctor's Notes by Tom Ingram", href: "/blog" },
     ],
   },
 ]
@@ -128,7 +128,7 @@ function MobileNav() {
 
 export default function Header() {
   return (
-    <header className="w-full border-b bg-white">
+    <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/">
           <Image src="/stepworks-logo.png" alt="Stepworks" width={160} height={40} />
